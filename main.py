@@ -16,7 +16,7 @@ SendingEmail = os.environ.get("Email")
 Password = os.environ.get("Password")
 EmailSubject = os.environ.get("EmailSubject")
 EmailBody = os.environ.get("EmailBody")
-
+SheetTitle = os.environ.get("SheetTitle")
 
 
 def get_google_sheet_data(sheet_title,sheet_index=0):
@@ -82,7 +82,7 @@ def send_email(name,email,phone,res_email,flag_cell,worksheet):
 
 
 
-google_Sheet_title = 'Society'
+google_Sheet_title = SheetTitle
 responses, headers,worksheet = get_google_sheet_data(google_Sheet_title)
 
     # print(headers,"header here//")

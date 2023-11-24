@@ -53,6 +53,8 @@ pip install -r requirements.txt
 
 Owner = "ibad"
 
+SheetTitle = "your google sheet title"
+
 Email = 'your email address'
 
 Password = 'app password generated from google account manager'
